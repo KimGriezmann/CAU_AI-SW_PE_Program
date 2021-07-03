@@ -1,5 +1,11 @@
 # DeepLearning_BeTheLegend
 
+## 2021. 06. 30
+### To do List
+1. 스탯티즈에서 타자 데이터 수집
+스탯티즈(http://www.statiz.co.kr/main.php)
+선수정보 - 각타자 - Playlog - 개막부터 6/30 까지 데이터 수집
+
 ## 2021. 07. 03
 ### To-do List
 1. 투수 유형
