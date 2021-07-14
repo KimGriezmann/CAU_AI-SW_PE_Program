@@ -47,6 +47,8 @@ merge error 해결 : final data's length is 5296
 
 ### To-do List
 stadium & pitcher type 컬럼 추가
+
+
 learn MLP model
 
 
