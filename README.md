@@ -34,6 +34,16 @@
 
 ## 2021. 07. 11
 ### To-do List
-1. 새로운 컬럼 추가: 투수 유형별 타율, 구장별 타율, ~상대 팀 타율 수정 및 한 팀 추출~
-2. EDA를 하자..!   
+1. 새로운 컬럼 추가: 투수 유형별 타율, 구장별 타율, 상대 팀 타율 수정 및 한 팀 추출
+2. EDA  
 3. 난관 : 데이터프레임 merge시, 더블헤더 날의 중복된 merge 발생
+
+## 2021. 07. 15
+### Done List
+append double_header code column > modify recent avg, vs_avg definition
+now, we correct merge error : final data's length is 5296
+
+### To-do List
+append stadium & pitcher type avg column
+learn MLP model 
+EDA visulization
