@@ -53,3 +53,4 @@ learn MLP model
 
 
 EDA visulization
+※시즌 초반 경기는 어느정도 기준을  제외해야할까?
