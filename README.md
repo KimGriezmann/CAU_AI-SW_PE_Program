@@ -41,11 +41,13 @@
 ## 2021. 07. 15
 ### Done List
 더블헤더 코드 추가 (기본 0/ 더블헤더 1차전 1/2) > 최근 타율, 상대 타율 구하는 함수 수정
-\\
+
+
 merge error 해결 : final data's length is 5296
 
 ### To-do List
 stadium & pitcher type 컬럼 추가
 learn MLP model
-\\
+
+
 EDA visulization
