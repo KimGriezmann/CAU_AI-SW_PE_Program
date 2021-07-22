@@ -82,7 +82,7 @@ EDA visulization
 1. 의미 : 표준명
 2. 이름 : name
 3. 날짜 : day
-4. 상대 : vs_team
+4. 상대 : vs
 5. 결과 : result
 6. 타순 : bat_order
 7. 포지션 : position
@@ -93,22 +93,31 @@ EDA visulization
 12. 2루타 : 2_hit
 13. 3루타 : 3_hit
 14. 홈런 : homerun
-15. 루타 : 
-16. 타점 : 
-17. 도루 성공 : 
-18. 도루 실패 : 
-19. 볼넷 : 
-20. 사구 : 
-21. 고4 : 
-22. 삼진 : 
-23. 병살 : 
-24. 희타 : 
-25. 희비 : 
+15. 루타 : tb (total base)
+16. 타점 : rbi
+17. 도루 성공 : sb (stolen base)
+18. 도루 실패 : cs (caught stealing)
+19. 볼넷 : bb
+20. 사구 : hpp (hit by pitch)
+21. 고4 : ibb (intentional ball)
+22. 삼진 : so (strike out)
+23. 병살 : gdp (ground into double play)
+24. 희타 : sh (sacrifice hit)
+25. 희비 : sf (sacrifice fly)
 26. 타율 : avg
-27. 출루율 : 
-28. 장타율 : 
-29. OPS : 
-30. 투구 : 
-31. avLI : 
-32. RE24 : 
-33. WPA : 
+27. 출루율 : obp
+28. 장타율 : slg
+29. OPS : ops
+30. 투구 : pitch
+31. avLI : avLI
+32. RE24 : RE24
+33. WPA : WPA
+34. 상대 누적 타수 : vs_cu
+35. 상대 누적 안타 : vs_hit
+36. 상대 타율 : vs_avg
+37. 구장 : stadium
+38. 최근 5일 타율 : recent_5days
+39. 최근 10일 타율 : recent_10days
+40. 최근 5경기 타율 : recent_5games
+41. 최근 10일  성공률 : success_10days
+42. 더블헤더 : double
