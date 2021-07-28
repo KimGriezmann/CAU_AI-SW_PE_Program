@@ -67,10 +67,10 @@ EDA visulization
 헤더, vs_avg, recent 5 games avg
 
 ### To-do List
-1. recent5 / recent10 
+1. ~recent5 / recent10 
 2. 최근 10경기 성공률 구하기
-3. day ex) 5월 5일 > 20200505
-4. day가 바뀌니까 최근 5경기 구하는 함수 수정
+3. ~day ex) 5월 5일 > 20200505
+4. ~day가 바뀌니까 최근 5경기 구하는 함수 수정
 
 5. vs + 날짜로 정렬해서 상대별 누적 타수, 누적 안타 구하기
 6. 이 데이터를 사용해서 vs 타율 쓰기
