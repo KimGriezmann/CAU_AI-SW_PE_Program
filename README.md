@@ -120,8 +120,9 @@ EDA visulization
 39. 최근 10일 타율 : recent_10days_avg
 40. 최근 5경기 타율 : recent_5games_avg
 41. 최근 10일  성공률 : success_10days
-42. 더블헤더 : double
-43. 팀 이름 : Team
+42. 최근 10경기 성공률 : success_10games
+43. 더블헤더 : double
+44. 팀 이름 : Team
 
 ** Team List
   
