@@ -123,7 +123,7 @@ EDA visulization
 42. 더블헤더 : double
 43. 팀 이름 : Team
 
-<Team List>
+** Team List
   
 Team_2016 = ['NC','kt','LG','두산','히어로즈','KIA','롯데','삼성','SK','한화']
 
