@@ -116,9 +116,9 @@ EDA visulization
 35. 상대 누적 안타 : vs_hit
 36. 상대 타율 : vs_avg
 37. 구장 : stadium
-38. 최근 5일 타율 : recent_5days
-39. 최근 10일 타율 : recent_10days
-40. 최근 5경기 타율 : recent_5games
+38. 최근 5일 타율 : recent_5days_avg
+39. 최근 10일 타율 : recent_10days_avg
+40. 최근 5경기 타율 : recent_5games_avg
 41. 최근 10일  성공률 : success_10days
 42. 더블헤더 : double
 43. 팀 이름 : Team
