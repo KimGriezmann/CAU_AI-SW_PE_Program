@@ -68,7 +68,7 @@ EDA visulization
 
 ### To-do List
 1. ~recent5 / recent10~
-2. 최근 10경기 성공률 구하기
+2. ~최근 10경기 성공률 구하기~
 3. ~day ex) 5월 5일 > 20200505~
 4. ~day가 바뀌니까 최근 5경기 구하는 함수 수정~
 
