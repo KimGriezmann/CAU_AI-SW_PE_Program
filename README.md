@@ -82,47 +82,50 @@ EDA visulization
 1. 의미 : 표준명
 2. 이름 : name
 3. 날짜 : day
-4. 상대 : vs
-5. 결과 : result
-6. 타순 : bat_order
-7. 포지션 : position
-8. 선발여부 : start_member
-9. 타수 : ab
-10. 득점 : score
-11. 안타 : hit
-12. 2루타 : 2_hit
-13. 3루타 : 3_hit
-14. 홈런 : homerun
-15. 루타 : tb (total base)
-16. 타점 : rbi
-17. 도루 성공 : sb (stolen base)
-18. 도루 실패 : cs (caught stealing)
-19. 볼넷 : bb
-20. 사구 : hpp (hit by pitch)
-21. 고4 : ibb (intentional ball)
-22. 삼진 : so (strike out)
-23. 병살 : gdp (ground into double play)
-24. 희타 : sh (sacrifice hit)
-25. 희비 : sf (sacrifice fly)
-26. 타율 : avg
-27. 출루율 : obp
-28. 장타율 : slg
-29. OPS : ops
-30. 투구 : pitch
-31. avLI : avLI
-32. RE24 : RE24
-33. WPA : WPA
-34. 상대 누적 타수 : vs_cu
-35. 상대 누적 안타 : vs_hit
-36. 상대 타율 : vs_avg
-37. 구장 : stadium
-38. 최근 5일 타율 : recent_5days_avg
-39. 최근 10일 타율 : recent_10days_avg
-40. 최근 5경기 타율 : recent_5games_avg
-41. 최근 10일  성공률 : success_10days
-42. 최근 10경기 성공률 : success_10games
-43. 더블헤더 : double
-44. 팀 이름 : Team
+4. 상대(@포함) : vs
+5. 상대 : vs_team
+6. 결과 : result
+7. 타순 : bat_order
+8. 포지션 : position
+9. 선발여부 : start_member
+10. 타수 : ab
+11. 득점 : score
+12. 안타 : hit
+13. 2루타 : 2_hit
+14. 3루타 : 3_hit
+15. 홈런 : homerun
+16. 루타 : tb (total base)
+17. 타점 : rbi
+18. 도루 성공 : sb (stolen base)
+19. 도루 실패 : cs (caught stealing)
+20. 볼넷 : bb
+21. 사구 : hpp (hit by pitch)
+22. 고4 : ibb (intentional ball)
+23. 삼진 : so (strike out)
+24. 병살 : gdp (ground into double play)
+25. 희타 : sh (sacrifice hit)
+26. 희비 : sf (sacrifice fly)
+27. 타율 : avg
+28. 출루율 : obp
+29. 장타율 : slg
+30. OPS : ops
+31. 투구 : pitch
+32. avLI : avLI
+33. RE24 : RE24
+34. WPA : WPA
+35. 상대 누적 타수 : vs_ab
+36. 상대 누적 안타 : vs_hit
+37. 상대 타율 : vs_avg
+38. 홈/원정 : home/away
+39. 홈 타율 : home_avg
+40. 원정 타율 : away_avg
+41. 최근 5일 타율 : recent_5days_avg
+42. 최근 10일 타율 : recent_10days_avg
+43. 최근 5경기 타율 : recent_5games_avg
+44. 최근 10일  성공률 : success_10days
+45. 최근 10경기 성공률 : success_10games
+46. 더블헤더 : double
+47. 팀 이름 : Team
 
 ** Team List
   
