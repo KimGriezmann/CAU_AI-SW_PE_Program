@@ -151,4 +151,4 @@ Team_2021 = ['kt','삼성','LG','SSG','NC','키움','두산','롯데','KIA','한
 5. MLP 모델 적용하기
 6. test set accuracy aim : 90%
 7. MLP를 보완할 모델 찾기
-
+※start_member가 FALSE인 데이터에 대한 처리 필요!※
