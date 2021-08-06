@@ -145,10 +145,31 @@ Team_2021 = ['kt','삼성','LG','SSG','NC','키움','두산','롯데','KIA','한
 ## 2021. 07. 29
 ### To do list
 1. ~데이터 전체 merge~
-2. 시즌 초반 데이터 걸러내기
+2. ~시즌 초반 데이터 걸러내기~
 3. ~사용할 데이터 : 18-21년 시즌 합친 데이터~
 4. 피쳐 사용 시 근거 제시 (도메인적 접근)
-5. MLP 모델 적용하기
+5. ~MLP 모델 적용하기~
 6. test set accuracy aim : 90%
 7. MLP를 보완할 모델 찾기\
 ~※start_member가 FALSE인 데이터에 대한 처리 필요!~
+
+## 2021. 08. 5
+### Done list
+1. 데이터 줄이기 : 선발 출장, 시즌 초 3,4월 제외, 0타수 경기 데이터 제외
+2. 피쳐 : 크롤링으로 얻은 데이터 중 avLI, RE24, WPA 추가
+3. MLP 모델 개선
+- layer 간소화
+- 출력층 활성화 함수 변경 : softmax > sigmoid
+- loss 함수 변경 : categorical > binary crossentropy
+- optimizer 실험 : rmsprop & Adam
+4. Validation set
+5. loss & acc graph
+6. Check overfitting
+7. High accuracy = 0.8217
+
+### To do list
+1. 피쳐 추가 가능한지
+2. 가중치 초기화 함수
+3. layer & unit에 따른 실험
+4. epochs & batch_size에 따른 실험
+5. 
