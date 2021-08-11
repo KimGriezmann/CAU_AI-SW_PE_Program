@@ -173,3 +173,15 @@ Team_2021 = ['kt','삼성','LG','SSG','NC','키움','두산','롯데','KIA','한
 3. layer & unit에 따른 실험
 4. epochs & batch_size에 따른 실험
 5. update high accuracy
+
+## 2021. 08. 10
+### Done list
+MLP 성능 개선 6가지 방법
+1. 가중치 초기화 함수 : Xavier initialization > He initialization 
+2. 활성화 함수 : sigmoid > ReLU
+3. optimizer : RmsProp > Adam
+4. 배치 정규화 : 활성화 함수 전에 넣어준다.
+5. Drop out : 과적합 방지, 활성화 함수 뒤
+6. 모델 앙상블 <br/>
+
+실험할 모델을 함수화
