@@ -184,4 +184,9 @@ MLP 성능 개선 6가지 방법
 5. Drop out : 과적합 방지, 활성화 함수 뒤
 6. 모델 앙상블 <br/>
 
-실험할 모델을 함수화
+실험할 모델을 함수화 <br/>
+
+### To do list
+1. k-fold cross validation
+2. RNN
+3. LSTM
