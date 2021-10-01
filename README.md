@@ -66,17 +66,15 @@
     * Optimization : Rmsprop, Adam
     
 - Dropout 적용 여부
-- 최근 성적을 나타내는 지표 생성
-- Home/Away 지표 생성
-- 상대 Vs 지표 생성
+- 새로운 지표 생성(최근 성적, Home/Away, 상대 vs)
 
 ![model](https://user-images.githubusercontent.com/80115212/135570765-67cd9854-e615-419e-afab-6d83c2b41220.PNG)
 
 <br/>
 
 
-### **2-(6) 모델 학습 中**
-- MLP (최근 성적 지표, Home/away 지표, Vs 지표 제외
+### **2-(6) 모델 학습 과정**
+- MLP (최근 성적 지표, Home/away 지표, Vs 지표 제외)
 
    ![model1](https://user-images.githubusercontent.com/80115212/135569722-7e5ca8a7-a1bd-41a7-b59d-13c4536067f6.PNG)
    * Loss: 0.509
