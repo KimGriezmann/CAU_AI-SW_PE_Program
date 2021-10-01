@@ -1,4 +1,4 @@
-# **CAU AI/SW PE program**
+# **CAU AI/SW PE Program**
 ![1page](https://user-images.githubusercontent.com/80115212/135577492-fe492d70-ba6d-49a6-b050-75fa7b2c0f99.PNG)
 
 
