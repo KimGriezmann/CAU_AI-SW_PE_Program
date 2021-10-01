@@ -1,5 +1,5 @@
 # **CAU AI/SW PE program**
-![1page](https://user-images.githubusercontent.com/80115212/135563620-0fafd456-581b-4e06-919c-58551108668c.PNG)
+![1page](https://user-images.githubusercontent.com/80115212/135577492-fe492d70-ba6d-49a6-b050-75fa7b2c0f99.PNG)
 
 
 <br/>
