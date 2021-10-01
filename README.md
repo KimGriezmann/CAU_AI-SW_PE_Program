@@ -1,12 +1,11 @@
 # **CAU AI/SW PE program**
-------------------------------------
+![1page](https://user-images.githubusercontent.com/80115212/135563620-0fafd456-581b-4e06-919c-58551108668c.PNG)
 
 
 <br/>
 <br/>
 
 ## **1. 프로젝트 소개**
-------------------------------------
 ### **1-(1) PE 프로그램**
 - 중앙대학교 SW 복수전공 학부연구생 (시각영상미디어연구실)
 
@@ -22,81 +21,86 @@
 
 
 ## **2. 프로젝트 내용**
--------------------------------------------------------------
 ### **2-(1) 문제 정의**
+- KBO리그 타자를 대상으로 해당 경기 안타 여부를 분류하는 딥러닝 모델 
 
-- 어떤 타구가 좋은 타구일까?
-- 타자 성적 예측 모형 개발을 통한 잔여 기간 KBO 타자 OPS 예측 (2021.09.15 ~ 2021.10.08) 
 
 <br/>
 
 
 ### **2-(2) 분석 목표**
-
-![분석목표](https://user-images.githubusercontent.com/80115212/135224326-42d98241-5498-4289-81e8-d7fc894cb85e.PNG)
-
-- 최근 n일간의 성적으로 이후 24일간의 성적을 예측   
-- 이때, home/away(홈/원정)로 나누어 각각 예측하여 가중 평균
+- 이진 분류 문제에 효과적인 딥러닝 모델 네트워크를 개발   
+- Multi Layer Perceptron(MLP)과 Recurrnet Neural Network(RNN)에 기반한 네트워크 설계
 
 <br/>
 
 
 ### **2-(3) 데이터 수집 및 전처리**
-- 스탯티즈에서 타석 상황 데이터 수집 
-- 타구 트래킹(HTS) 데이터와 병합
-- 오류 검출 및 새로운 컬럼 정의
+- 스탯티즈에서 4년도의 타자 90명의 데이터 수집
+
+![data수집](https://user-images.githubusercontent.com/80115212/135566371-7592a0ee-b887-4711-b1bd-a29199fd5ef4.PNG)
+
+- 데이터 정규화(MIN-MAX Scaling) 및 아웃라이어 제거
+- 학습 데이터 : 검증 데이터 = 7 : 3
 
 <br/>
 
 
-### **2-(4) 3가지의 배럴(Barrel) 정의**
-- Power Barrel
-    * 순장타율(장타율 - 타율)을 기준으로 탐색
-    * 순장타율 0.5이상 Power Barrel로 정의
-![power_barrel](https://user-images.githubusercontent.com/80115212/135222920-97f03021-248f-4220-8fbf-b42a7bf6559a.PNG)
-
-
-- Contact Barrel
-    * 단타율(안타+직선타) 기준으로 탐색
-    * 단타율 0.7이상 Contact Barrel로 정의
-![contact_barrel](https://user-images.githubusercontent.com/80115212/135222960-22e07502-95a9-4c69-b3b9-2ac9f64f59c4.PNG)
-
-
-- Clutch Barrel
-    * WPa(승리 기여도) 기준으로 탐색
-    * WPa 0.0815이상 Clutch Barrel로 정의
-![clutch_barrel](https://user-images.githubusercontent.com/80115212/135222980-c26ed82a-72a4-415b-acbb-0a1ed2fa0329.PNG)
-
-
-cf. 타구속도와 발사각도를 범주화하여 탐색
+### **2-(4) 관련 학습**
+- 유사한 연구 논문 리뷰
+- MLP, RNN, LSTM 구조
+- Python Keras와 Scikit-learn 라이브러리
+- MLP 모델 성능 개선 방안
+- 과적합(Overfitting) 방지
 
 <br/>
 
 
-### **2-(5) OPS 예측**
-- 세이버메트릭스에 기반한 17개의 지표 계산 
-- 선수 수준(4년간의 평균) 지표 계산
-- ML
-    * Extra Trees
-    * Random Forest
-    * LGBM
-- DL
-    * Multi Layer Perceptron
+### **2-(5) 모델 설계**
+- MLP, RNN, LSTM 사용
+- Node, Hidden layer 조절
+- Experiment setting
+    * Activatoin function: ReLU & Sigmoid(출력층)
+    * Loss function: Binary Crossentrophy & Mean Squared Error
+    * Weight Initialization : Random Uniform -> He Initialization
+    * Optimization : Rmsprop, Adam
+    
+- Dropout 적용 여부
+- 최근 성적을 나타내는 지표 생성
+- Home/Away 지표 생성
+- 상대 Vs 지표 생성
 
-
-- Hyper Parameter 탐색
-
-
-cf. RMSE를 통해 모델 성능 비교
+![model](https://user-images.githubusercontent.com/80115212/135570765-67cd9854-e615-419e-afab-6d83c2b41220.PNG)
 
 <br/>
 
 
-## **3. 분석 결과**
-------------------------------------
-### **3-(1) 좋은 타구(Barrel) 정의**
-![barrel_result](https://user-images.githubusercontent.com/80115212/135224883-ebf0b7c1-9566-45e1-8366-57e8d1c08eb4.PNG)
+### **2-(6) 모델 학습 中**
+- MLP (최근 성적 지표, Home/away 지표, Vs 지표 제외
 
+   ![model1](https://user-images.githubusercontent.com/80115212/135569722-7e5ca8a7-a1bd-41a7-b59d-13c4536067f6.PNG)
+   * Loss: 0.509
+   * Accuracy: 0.748
 
-### **3-(2) OPS 예측**
-![result](https://user-images.githubusercontent.com/80115212/135225398-c957fca1-b9b0-4917-8eda-9d5a67c4cdd7.PNG)
+- MLP (위의 모델에서 지표 추가)
+
+   ![model2](https://user-images.githubusercontent.com/80115212/135569988-6c3a9278-131a-46b3-80e9-7493e13a8301.PNG)
+   * Loss: 0.407
+   * Accuracy: 0.813
+
+- GRU (Loss function: MSE)
+
+   ![model3](https://user-images.githubusercontent.com/80115212/135570110-c8d4938e-265c-4b0e-9308-bc75d9943edb.PNG)
+   * Loss: 0.135
+   * Accuracy: 0.816
+
+<br/>
+
+### **2-(7) 모델 성능 비교**
+![model_result](https://user-images.githubusercontent.com/80115212/135570773-967891c2-5fe3-4d6b-816c-4ecc77134124.PNG)
+
+<br/>
+
+## **3. 결론**
+기존의 지표에 최근 성적 지표, Home/Away 지표, Vs 지표를 추가하여 분류 정확도 5~6% 향상을 이루었고 최종적으로 82%의 정확도를 갖는 딥러닝 모델을 설계하였다.
+이를 미루어보아 더욱 방대한 데이터의 수집과 창의적인 지표를 추가한다면 모델의 성능을 더 올릴 수 있을것이라 기대된다.
